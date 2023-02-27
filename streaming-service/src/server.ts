@@ -14,13 +14,23 @@ tcpServer.on('connection', (socket) => {
 
         // HINT: what happens if the JSON in the received message is formatted incorrectly?
         // HINT: see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
-        let currJSON = JSON.parse(msg.toString());
 
-        websocketServer.clients.forEach(function each(client) {
+        // See if message being passed can be parsed as a JSON, else skip it
+        try {
+          let currJSON = JSON.parse(msg.toString());
+
+          websocketServer.clients.forEach(function each(client) {
             if (client.readyState === WebSocket.OPEN) {
               client.send(msg.toString());
+              // are we meant to do something with currJSON?
             }
           });
+
+        } catch (e) {
+          if (e instanceof SyntaxError) {
+            console.log("error in parsing message")
+          }  
+        }
     });
 
     socket.on('end', () => {
