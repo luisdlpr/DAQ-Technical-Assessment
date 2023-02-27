@@ -1,0 +1,34 @@
+{
+  "name": "live-battery-monitor",
+  "version": "1.0.0",
+  "description": "This assessment aims to gauge your current technical ability and give you a practical introduction to some of what we do here at Redback Racing.  We don't expect everyone to complete everything perfectly - you may not be familiar with all the frameworks and tools mentioned here, and so you may find it helpful to consult the resources linked, as well as doing your own research.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+      "@typescript-eslint/eslint-plugin": "5.11.0",
+      "@typescript-eslint/parser": "5.11.0",
+      "eslint": "8.9.0",
+      "eslint-config-prettier": "8.3.0",
+      "eslint-plugin-import": "2.25.4",
+      "eslint-plugin-json-files": "1.3.0",
+      "eslint-plugin-prettier": "4.0.0",
+      "eslint-plugin-simple-import-sort": "7.0.0",
+      "prettier": "2.5.1"
+  },
+  "peerDependencies": {
+      "eslint": "^8.9.x",
+      "prettier": "^2.5.x"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisdlpr/DAQ-Technical-Assessment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisdlpr/DAQ-Technical-Assessment/issues"
+  },
+  "homepage": "https://github.com/luisdlpr/DAQ-Technical-Assessment#readme"
+}
