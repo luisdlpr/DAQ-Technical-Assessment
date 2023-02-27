@@ -13,10 +13,31 @@
   color: white;
 }
 
+main {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 100%;
+  background-color: #0b090a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .live-value {
   color: white;
   font-size: calc(100px + 2vmin);
-  padding: 5%;
+}
+
+.message {
+  background-color: #161a1d;
+  font-size: 50px;
+  /* height: calc(100px + 2vmin); */
+  width: 80%;
+  justify-content: center;
+  margin-top: 5%;
+  border-radius: 20px;
+  padding: 5% 0;
 }
 
 .redback-logo {

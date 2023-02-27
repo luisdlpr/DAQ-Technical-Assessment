@@ -35,15 +35,20 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-      <img src={RedbackLogo} className="redback-logo" alt="Redback Racing Logo"/>
-        <p className='value-title'>
-          Live Battery Temperature
-        </p>
-        <LiveValue temp={temperature}/>
-      </header>
-    </div>
+    <html>
+      <head>
+        <title> Battery </title>
+      </head>
+      <div className="App">
+        <header className="App-header">
+        <img src={RedbackLogo} className="redback-logo" alt="Redback Racing Logo"/>
+          <p className='value-title'>
+            Live Battery Temperature
+          </p>
+          <LiveValue temp={temperature}/>
+        </header>
+      </div>
+    </html>
   );
 }
 
