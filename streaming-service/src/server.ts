@@ -28,12 +28,9 @@ tcpServer.on('connection', (socket) => {
 
         // See if message being passed can be parsed as a JSON, else skip it
         try {
-          console.log
           let currJSON = JSON.parse(msg.toString());
 
           let timestamp = currJSON["timestamp"]
-
-          console.log(alertsQueue);
 
           while (alertsQueue.length > 0 && alertsQueue[0] < timestamp - 5000) {
             alertsQueue.shift();
