@@ -1,7 +1,8 @@
 # Brainstorming
 
 Unfortunately, I don't think I will have time to attempt the extension (CI/CD)
-pipeline due to work / uni commitments. Had a quick attempt to set up a linter,
+pipeline due to part time work + uni commitments. 
+Had a quick attempt to set up a linter,
 but seem to be running into issues due to the project consisting of multiple 
 react projects / microservices.  Attempted npm init and added linting packages
 to json with no luck
